@@ -1,15 +1,10 @@
 import { useReducer } from "react";
-import DigitButton from "./DigitButton";
-import OperationButton from "./OperationButton";
+import { ACTIONS } from "./constants";
+import { INTEGER_FORMATTER } from "./utils";
 import "./styles.css";
 
-export const ACTIONS = {
-  ADD_DIGIT: "add-digit",
-  CHOOSE_OPERATION: "choose-operation",
-  CLEAR: "clear",
-  DELETE_DIGIT: "delete-digit",
-  EVALUATE: "evaluate",
-};
+import DigitButton from "./DigitButton";
+import OperationButton from "./OperationButton";
 
 function reducer(state, { type, payload }) {
   switch (type) {
@@ -132,10 +127,6 @@ function evaluate({ currentOperand, previousOperand, operation }) {
 
   return computation.toString();
 }
-
-const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
-  maximumFractionDigits: 0,
-});
 
 function formatOperand(operand) {
   if (operand == null) return;
