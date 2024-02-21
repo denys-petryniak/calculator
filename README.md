@@ -2,6 +2,8 @@
 
 ![Screenshot 2023-11-24 at 13 34 15](https://github.com/denys-petryniak/calculator/assets/16530588/44b3157d-5f40-447b-8894-cc1352d32a54)
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/denys-petryniak/calculator)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
