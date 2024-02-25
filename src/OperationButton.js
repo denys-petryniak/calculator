@@ -1,3 +1,4 @@
+import React from 'react';
 import { ACTIONS } from "./constants";
 
 export default function OperationButton({ dispatch, operation }) {
